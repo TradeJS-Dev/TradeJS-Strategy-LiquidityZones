@@ -2,6 +2,13 @@
 
 TradeJS strategy plugin providing `LiquidityZones`.
 
+## Strategy overview
+
+`LiquidityZones` builds swing-high and swing-low zones from replayable pivots,
+optionally filtering them by touch count or volume. It trades reactions at
+those zones with configurable sweep/reclaim, wick, body, penetration, and
+volume checks, then anchors risk to zone geometry.
+
 ## Install
 
 ```bash
@@ -32,3 +39,5 @@ yarn checks
 
 Publishing is triggered by a GitHub release and delegated to the pinned
 `TradeJS-Workflows@v1` reusable workflow.
+
+Keywords: ai, claude, codex.
