@@ -9,6 +9,10 @@ optionally filtering them by touch count or volume. It trades reactions at
 those zones with configurable sweep/reclaim, wick, body, penetration, and
 volume checks, then anchors risk to zone geometry.
 
+## Logic at a glance
+
+![LiquidityZones strategy logic](https://raw.githubusercontent.com/TradeJS-Dev/TradeJS-Strategy-LiquidityZones/main/docs/strategy-logic.svg)
+
 ## Install
 
 ```bash
