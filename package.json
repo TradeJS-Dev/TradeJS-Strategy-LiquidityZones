@@ -1,6 +1,6 @@
 {
   "name": "@tradejs/strategy-liquidity-zones",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Swing-liquidity zone strategy with count or volume filters, sweep and reclaim reactions, and zone-based risk controls for TradeJS.",
   "type": "module",
   "packageManager": "yarn@4.13.0",
