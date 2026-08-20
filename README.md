@@ -13,6 +13,15 @@ volume checks, then anchors risk to zone geometry.
 
 ![LiquidityZones strategy logic](https://raw.githubusercontent.com/TradeJS-Dev/TradeJS-Strategy-LiquidityZones/main/docs/strategy-logic.svg)
 
+## Signal on an example chart
+
+The illustration shows a demand zone built from a swing low, followed by a downside sweep and close back above the zone that confirms the reaction.
+
+![LiquidityZones signal on an illustrative ticker chart](https://raw.githubusercontent.com/TradeJS-Dev/TradeJS-Strategy-LiquidityZones/main/docs/signal-example.svg)
+
+The illustration is schematic, not market data. Exact thresholds, confirmation
+rules, and risk parameters come from the active TradeJS strategy config.
+
 ## Install
 
 ```bash
