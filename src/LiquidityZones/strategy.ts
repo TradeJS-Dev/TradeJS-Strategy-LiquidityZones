@@ -1,12 +1,17 @@
-import type { StrategyRegistryEntry } from "@tradejs/types";
+import { createStrategyConfigParser } from "@tradejs/strategy-kit/config";
+import type { ValidatedStrategyRegistryEntry } from "@tradejs/strategy-kit/config";
 import { config as DEFAULT_CONFIG, LiquidityZonesConfig } from "./config";
 import { createLiquidityZonesCore } from "./core";
 import { buildLiquidityZonesDetectorKey } from "./engine";
 import { liquidityZonesManifest } from "./manifest";
 
-export const LiquidityZonesStrategyDefinition: StrategyRegistryEntry<LiquidityZonesConfig> =
+export const LiquidityZonesStrategyDefinition: ValidatedStrategyRegistryEntry<LiquidityZonesConfig> =
   {
     defaults: DEFAULT_CONFIG,
+    parseConfig: createStrategyConfigParser({
+      strategyName: "LiquidityZones",
+      defaults: DEFAULT_CONFIG,
+    }),
     createCore: createLiquidityZonesCore,
     manifest: liquidityZonesManifest,
     detectorKey: buildLiquidityZonesDetectorKey,
